@@ -1,47 +1,47 @@
 # Smart Health System - Medical AI Assistant
 
-تطبيق ويب متكامل مع مساعد طبي ذكي يعتمد على Google Gemini AI للتحليل الطبي والاستشارات الصحية.
+A comprehensive web application integrated with an intelligent medical assistant powered by Google Gemini AI for medical analysis and health consultations.
 
-## 🚀 المميزات
+## 🚀 Features
 
-- 🤖 **مساعد AI طبي** متكامل مع Google Gemini AI
-- 🏥 **تحليل العلامات الحيوية** والبيانات الطبية
-- 💬 **محادثات ذكية** مع دعم اللغة العربية
-- 📊 **واجهة مستخدم حديثة** باستخدام React و TailwindCSS
-- 🔐 **نظام مصادقة آمن** مع JWT
-- 🗄️ **قاعدة بيانات PostgreSQL** قوية
+- 🤖 **AI Medical Assistant** integrated with Google Gemini AI
+- 🏥 **Vital Signs Analysis** and medical data processing
+- 💬 **Intelligent Conversations** with Arabic language support
+- 📊 **Modern UI** built with React and TailwindCSS
+- 🔐 **Secure Authentication** system with JWT
+- 🗄️ **Powerful PostgreSQL** database
 
-## 🛠️ التقنيات المستخدمة
+## 🛠️ Technologies Used
 
 ### Backend
 - **Node.js** + **Express.js**
-- **TypeORM** مع PostgreSQL
+- **TypeORM** with PostgreSQL
 - **Google Generative AI** (Gemini 2.5 Flash)
-- **JWT** للمصادقة
-- **CORS** للتواصل مع Frontend
+- **JWT** for authentication
+- **CORS** for frontend communication
 
 ### Frontend
-- **React 18** مع Hooks
-- **Vite** كـ Development Server
-- **TailwindCSS** للتصميم
-- **Axios** للطلبات HTTP
+- **React 18** with Hooks
+- **Vite** as Development Server
+- **TailwindCSS** for styling
+- **Axios** for HTTP requests
 
-## 📋 المتطلبات
+## 📋 Requirements
 
 - Node.js 18+
 - PostgreSQL 18
 - Git
 
-## 🚀 التثبيت والتشغيل
+## 🚀 Installation & Setup
 
-### 1. تثبيت PostgreSQL
+### 1. Install PostgreSQL
 ```bash
-# تأكد من تشغيل خدمة PostgreSQL
-# الاسم: postgresql-x64-18
-# المنفذ: 1234
+# Make sure PostgreSQL service is running
+# Service name: postgresql-x64-18
+# Port: 1234
 ```
 
-### 2. تثبيت الاعتماديات
+### 2. Install Dependencies
 ```bash
 # Backend
 cd Backend
@@ -52,13 +52,13 @@ cd ../frontend
 npm install
 ```
 
-### 3. إعداد المتغيرات البيئية
+### 3. Environment Variables Setup
 
 #### Backend/.env
 ```env
 NODE_ENV=development
 PORT=4000
-APP_NAME="Project CLI"
+APP_NAME="Smart Health System"
 
 # Gemini API
 GEMINI_API_KEY=AIzaSyCAbD7uTrxLmBr4crkHlZz7i88d6-HcLiQ
@@ -79,48 +79,48 @@ JWT_SECRET=super_secret_key_12345
 VITE_API_URL=http://localhost:4000/api
 ```
 
-### 4. تشغيل التطبيق
+### 4. Run the Application
 
-#### تشغيل PostgreSQL
+#### Start PostgreSQL
 ```bash
-# كـ Administrator
+# As Administrator
 Start-Service postgresql-x64-18
 ```
 
-#### تشغيل Backend
+#### Start Backend
 ```bash
 cd Backend
 npm run dev
-# يعمل على http://localhost:4000
+# Runs on http://localhost:4000
 ```
 
-#### تشغيل Frontend
+#### Start Frontend
 ```bash
 cd frontend
 npm run dev
-# يعمل على http://localhost:5000
+# Runs on http://localhost:5000
 ```
 
-## 🧪 الاختبار
+## 🧪 Testing
 
-### اختبار Gemini API
+### Test Gemini API
 ```bash
 cd Backend
 node test-gemini-simple.js
 ```
 
-### اختبار API Endpoints
+### Test API Endpoints
 ```bash
-# اختبار AI Chat
+# Test AI Chat
 curl -X POST http://localhost:4000/api/ai/chat \
   -H "Content-Type: application/json" \
-  -d '{"message":"مرحباً"}'
+  -d '{"message":"Hello"}'
 ```
 
-## 📁 هيكل المشروع
+## 📁 Project Structure
 
 ```
-Projct GL/
+Smart Health System/
 ├── Backend/
 │   ├── config/
 │   │   ├── database.js
@@ -151,46 +151,49 @@ Projct GL/
 ## 🔧 API Endpoints
 
 ### AI Assistant
-- `POST /api/ai/chat` - محادثة مع AI
-- `POST /api/ai/analyze` - تحليل نص طبي
-- `POST /api/ai/conversation` - محادثة متقدمة
-- `POST /api/ai/generate-image` - توليد صور (قريباً)
+- `POST /api/ai/chat` - Chat with AI
+- `POST /api/ai/analyze` - Analyze medical text
+- `POST /api/ai/conversation` - Advanced conversation
+- `POST /api/ai/generate-image` - Generate images (coming soon)
 
 ### Authentication
-- `POST /api/auth/login` - تسجيل الدخول
-- `POST /api/auth/register` - إنشاء حساب
+- `POST /api/auth/login` - User login
+- `POST /api/auth/register` - Create account
 
 ### Health
-- `GET /api/status` - حالة الخادم
+- `GET /api/status` - Server status
 
 ## 🤖 Gemini AI Integration
 
 - **Model**: `gemini-2.5-flash`
-- **Language Support**: العربية والإنجليزية
-- **Features**: تحليل طبي، استشارات، محادثات ذكية
+- **Language Support**: Arabic and English
+- **Features**: Medical analysis, consultations, intelligent conversations
 
-## 📝 ملاحظات هامة
+## 📝 Important Notes
 
-- تأكد من تشغيل PostgreSQL قبل تشغيل Backend
-- Backend يعمل على port 4000
-- Frontend يعمل على port 5000
-- تستطيع تعديل المنافذ في ملفات .env
+- Make sure PostgreSQL is running before starting Backend
+- Backend runs on port 4000
+- Frontend runs on port 5000
+- You can modify ports in .env files
 
-## 🚀 النشر
+## 🚀 Deployment
 
-يمكن نشر المشروع على:
-- **Vercel** للـ Frontend
-- **Railway** أو **Heroku** للـ Backend
-- **Supabase** أو **Railway** لقاعدة البيانات
+The project can be deployed on:
+- **Vercel** for Frontend
+- **Railway** or **Heroku** for Backend
+- **Supabase** or **Railway** for Database
 
-## 📄 الترخيص
+## 👨‍💻 Developer
+
+**MADOUI MOHAMAD SADAK**
+- Full Stack Developer
+- AI & Healthcare Technology Enthusiast
+- [GitHub Profile](https://github.com/mohamadsadak2005-creator)
+
+## 📄 License
 
 MIT License
 
-## 👥 المساهمون
-
-- مطور رئيسي
-
 ---
 
-**ملاحظة**: هذا المشروع للتجربة والتعليم فقط. لا يستخدم كاستشارة طبية حقيقية.
+**Disclaimer**: This project is for educational and demonstration purposes only. Not to be used as real medical consultation.

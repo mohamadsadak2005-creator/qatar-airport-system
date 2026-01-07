@@ -1,7 +1,7 @@
 {
-  "name": "project-cli",
+  "name": "smart-health-system-backend",
   "version": "1.0.0",
-  "description": "مشروع CLI متكامل مع Gemini AI والرسوم البيانية",
+  "description": "Backend API for Smart Health System - Medical AI Assistant with Gemini integration",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -22,34 +22,34 @@
     "db:backup": "node scripts/backup.js",
     "db:cleanup": "node scripts/cleanup.js",
     "docs:generate": "node scripts/generate-docs.js",
-    "docker:build": "docker build -t project-cli .",
-    "docker:run": "docker run -p 3000:3000 project-cli"
+    "docker:build": "docker build -t smart-health-system .",
+    "docker:run": "docker run -p 4000:4000 smart-health-system"
   },
   "keywords": [
-    "cli",
+    "healthcare",
     "ai",
+    "medical",
     "gemini",
-    "charts",
-    "analytics",
+    "api",
     "nodejs",
     "express",
     "postgresql",
     "typeorm"
   ],
   "author": {
-    "name": "فريق التطوير",
-    "email": "dev@project-cli.com",
-    "url": "https://project-cli.com"
+    "name": "MADOUI MOHAMAD SADAK",
+    "email": "mohamad.sadak@example.com",
+    "url": "https://github.com/mohamadsadak2005-creator"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/project-cli.git"
+    "url": "https://github.com/mohamadsadak2005-creator/Smart-Health-System.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/project-cli/issues"
+    "url": "https://github.com/mohamadsadak2005-creator/Smart-Health-System/issues"
   },
-  "homepage": "https://project-cli.com",
+  "homepage": "https://github.com/mohamadsadak2005-creator/Smart-Health-System#readme",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
@@ -64,12 +64,12 @@
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
-    "dotenv": "^16.3.0",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-rate-limit": "^6.8.1",
     "express-validator": "^7.0.1",
-    "helmet": "^7.0.0",
-    "jsonwebtoken": "^9.0.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "mongoose": "^9.0.1",
@@ -87,7 +87,7 @@
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "jest": "^29.6.2",
+    "jest": "^29.7.0",
     "nodemon": "^3.0.1",
     "prettier": "^3.0.2",
     "supertest": "^6.3.3"
