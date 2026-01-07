@@ -1,4 +1,4 @@
-# Project GL - Medical AI Assistant
+# Smart Health System - Medical AI Assistant
 
 تطبيق ويب متكامل مع مساعد طبي ذكي يعتمد على Google Gemini AI للتحليل الطبي والاستشارات الصحية.
 
