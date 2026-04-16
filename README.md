@@ -234,5 +234,5 @@ The application features a modern, responsive design with:
 This project is for educational purposes as part of a practical work assignment.
 
 ## App developer 
-كMS
+
 MADOUI MOHAMED SADEK- Object-Oriented Modeling & Database Design 
