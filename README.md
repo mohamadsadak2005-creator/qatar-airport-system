@@ -233,6 +233,6 @@ The application features a modern, responsive design with:
 
 This project is for educational purposes as part of a practical work assignment.
 
-## Author
-
-Practical Work Assignment - Object-Oriented Modeling & Database Design
+## App developer 
+كMS
+MADOUI MOHAMED SADEK- Object-Oriented Modeling & Database Design 
